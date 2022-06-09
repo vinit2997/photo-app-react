@@ -26,7 +26,7 @@ export class LikeButton extends React.Component {
     like(){
         const postId = this.props.postId;
         //fetvch api
-        fetch('/api/posts/' + postId + '/likes', { 
+        fetch('https://photo-app-secured.herokuapp.com/api/posts/' + postId + '/likes', { 
             headers: getHeaders(),
             body: JSON.stringify({}),
             method: "POST"
@@ -42,7 +42,7 @@ export class LikeButton extends React.Component {
         const likeId = this.props.likeId
         const likeCount = this.props.likeCount;
         //fetch api
-        fetch('/api/posts/' + postId + '/likes/'+likeId, { 
+        fetch('https://photo-app-secured.herokuapp.com/api/posts/' + postId + '/likes/'+likeId, { 
             headers: getHeaders(),
             method: "DELETE"
         }).then(response => response.json())

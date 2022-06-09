@@ -33,7 +33,7 @@ export class BookmarkButton extends React.Component {
         const postId = this.props.postId;
 
         //fetch from api
-        fetch('/api/bookmarks/', { 
+        fetch('https://photo-app-secured.herokuapp.com/api/bookmarks/', { 
             headers: getHeaders(),
             body: JSON.stringify({'post_id' : postId}),
             method: "POST"
@@ -51,7 +51,7 @@ export class BookmarkButton extends React.Component {
         const bmkId = this.props.bmkId;
 
         //fetch from api
-        fetch('/api/bookmarks/' + bmkId, { 
+        fetch('https://photo-app-secured.herokuapp.com/api/bookmarks/' + bmkId, { 
             headers: getHeaders(),
             method: "DELETE"
         }).then(response => response.json())

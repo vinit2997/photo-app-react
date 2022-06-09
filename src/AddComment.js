@@ -29,7 +29,7 @@ export class AddComment extends React.Component {
         };
 
         //fetch api
-        fetch('/api/comments', {
+        fetch('https://photo-app-secured.herokuapp.com/api/comments', {
             method: 'POST', 
             headers: getHeaders(),
             body: JSON.stringify(data)
@@ -61,7 +61,7 @@ export class AddComment extends React.Component {
             };
 
             //fetch api
-            fetch('/api/comments', {
+            fetch('https://photo-app-secured.herokuapp.com/api/comments', {
                 method: 'POST',
                 headers: getHeaders(),
                 body: JSON.stringify(data)

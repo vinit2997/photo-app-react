@@ -17,7 +17,7 @@ export class Stories extends React.Component {
 //get stories
     getStories(){
         //fetch api
-        fetch('/api/stories',{
+        fetch('https://photo-app-secured.herokuapp.com/api/stories',{
             headers: getHeaders()
         })
         .then(response => response.json())

@@ -19,7 +19,7 @@ export class Suggestions extends React.Component {
 
     //get suggestions
     getSuggestions(){
-        fetch('/api/suggestions', {
+        fetch('https://photo-app-secured.herokuapp.com/api/suggestions', {
             headers: getHeaders()
         }).then(response => response.json())
         .then(data => { 

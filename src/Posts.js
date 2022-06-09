@@ -21,7 +21,7 @@ class Posts extends React.Component {
     //getposts method
     getPosts(){
         //fetch posts from api
-        fetch('/api/posts', {
+        fetch('https://photo-app-secured.herokuapp.com/api/posts', {
             headers: getHeaders()
         }).then(response => response.json())
         .then(data => { 

@@ -25,7 +25,7 @@ export class Suggestion extends React.Component {
         if (this.state.following=='unfollow'){
             ev.currentTarget.ariaChecked = 'False';
             //fetch api
-            fetch('/api/following/'+this.state.suggestion_id, {
+            fetch('https://photo-app-secured.herokuapp.com/api/following/'+this.state.suggestion_id, {
                 method: 'DELETE',
                 headers: getHeaders(),
             })
@@ -43,7 +43,7 @@ export class Suggestion extends React.Component {
                 'user_id' : this.state.suggestion.id
             };
             //fetch api
-            fetch('/api/following', {
+            fetch('https://photo-app-secured.herokuapp.com/api/following', {
                 method: 'POST', 
                 headers: getHeaders(),
                 body: JSON.stringify(data)

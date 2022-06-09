@@ -14,7 +14,7 @@ export class MainNav extends React.Component {
 
 //get profile
     getProfile(){
-        fetch('/api/profile', {
+        fetch('https://photo-app-secured.herokuapp.com/api/profile', {
             headers: getHeaders()
         }).then(response => response.json())
         .then(data => { 
