@@ -1,0 +1,22 @@
+Q1) Were React’s compilation warning/error messages helpful?
+
+- Yes, they were helpful. 
+At one place I used '==' instead of '===' and the warnings helped me correct that mistake
+
+
+Q2) Did React’s compilation warning/error messages prompt you to consider making your site more accessible?
+
+- Yes, it did!
+At some places, I am using '#' in href since its not a complete website, but reach gives the following warning: "The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value"
+It does help in accessibility
+
+
+Q3) Did you consider conducting accessibility testing on your lab assignment? Why or why not?
+
+- Yes, I did use the WAVE tool to check the accessibility
+
+
+Q4) If you tested your site for accessibility and found issues, were you able to solve them? What did you do to try to solve them? What stopped you from successfully resolving or trying to resolve the issues?
+
+- I tried to solve most of the issues,
+Few of the errors were due to the aria-lable not present and some were contrast issues
